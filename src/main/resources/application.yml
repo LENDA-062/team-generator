@@ -1,0 +1,11 @@
+spring:
+  flyway:
+    user: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5433/team_generator
+    enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/team_generator
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
