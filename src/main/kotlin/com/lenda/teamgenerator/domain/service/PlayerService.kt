@@ -15,4 +15,8 @@ class PlayerService(private val playerRepository: PlayerRepository){
     fun listPlayers(): List<Player>{
         return playerRepository.findAll()
     }
+
+    fun deletePlayer(id: Long){
+        playerRepository.deleteById(id)
+    }
 }
